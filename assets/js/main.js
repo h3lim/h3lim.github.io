@@ -184,3 +184,15 @@
   });
 
 })();
+
+document.getElementById('toggle-ko').addEventListener('click', function() {
+  // 한국어 페이지로 리디렉션
+  const currentPath = window.location.pathname.replace('/en/', '/ko/');
+  window.location.href = currentPath;
+});
+
+document.getElementById('toggle-en').addEventListener('click', function() {
+  // 영어 페이지로 리디렉션
+  const currentPath = window.location.pathname.replace('/ko/', '/en/');
+  window.location.href = currentPath;
+});

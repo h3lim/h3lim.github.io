@@ -1,10 +1,3 @@
-
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
@@ -1429,4 +1422,52 @@ section,
 .profile-pic {
   width: 250px;
   height: auto;
+}
+
+.language-toggle {
+  display: flex;
+  gap: 10px;
+  /* position: absolute; */
+  /* top: 15px; */
+  /* right: 15px; */
+  /* z-index: 1000; */
+  margin-left: 20px; /* 네비게이션 메뉴와의 간격 조정 */
+}
+
+/* 모바일 화면에서 언어 토글 위치 조정 */
+@media (max-width: 1199px) {
+  .language-toggle {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    margin-left: 0;
+  }
+}
+
+.language-toggle a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #34b7a7;
+  border-radius: 5px;
+  color: #34b7a7;
+  transition: background-color 0.3s;
+}
+
+.language-toggle a:hover {
+  background-color: #34b7a7;
+  color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .navmenu > ul > li:last-child {
+    padding-right: 0;
+  }
+}
+
+.mobile-nav-toggle {
+  z-index: 9998;
+}
+
+.language-toggle {
+  z-index: 9999;
 }
